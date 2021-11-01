@@ -27,4 +27,8 @@ public class WordSearch2 {
 
         return root;
     }
+
+    public void recurse(char[][] board, int i, int j){
+        
+    }
 }
