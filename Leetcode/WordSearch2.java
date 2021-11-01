@@ -23,8 +23,7 @@ public class WordSearch2 {
     public TrieNode makeTrie(char[][] board){
         TrieNode root = new TrieNode();
 
-        for
-
+        
         return root;
     }
 
