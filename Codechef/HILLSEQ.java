@@ -32,7 +32,6 @@ class HILLSEQ
 		        int[] res = new int[n];
 		        int l=0, r=n-1;
                 System.out.println("Max: "+max);
-                
 		        for(Integer key: map.keySet()){
                     int freq = map.get(key);
                     System.out.println("l: "+l+" r: "+r);
