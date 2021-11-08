@@ -1,14 +1,13 @@
-import java.util.*;
 import java.lang.*;
+import java.util.*;
 
-public class MAXBRIDGE {
-    public static void main(String[] args)throws java.lang.Exception {
+public class FLIPCOMP {
+    public static void main(String[] args) throws java.lang.Exception{
         try {
             Scanner sc=new Scanner(System.in);
             int t=sc.nextInt();
             while(t-->0){
-                int n=sc.nextInt();
-                int m=sc.nextInt();
+                String s=sc.nextLine();
                 
             }
         } catch (Exception e) {
