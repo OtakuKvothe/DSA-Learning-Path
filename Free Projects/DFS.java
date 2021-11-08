@@ -32,6 +32,13 @@ public class DFS {
         boolean[] isVisited = new boolean[v];
 
         depthFirstSearchUtil(v, isVisited);
+
+        /*
+            //for dealing with disconnected graphs, where some vertices may not be reachable from one source, we try to do a DFS from each vertex, while maintaining the isVisited array.
+            for (int i = 0; i < V; ++i)
+            if (visited[i] == false)
+                depthFirstSearchUtil(i, visited);
+        */
     }
 
     public static void main(String[] args) {
