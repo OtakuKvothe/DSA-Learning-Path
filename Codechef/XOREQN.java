@@ -70,7 +70,7 @@ public class XOREQN {
                         isIdentical=false;
                     }
                 }
-                if(isIdentical){
+                if(isIdentical&&a[0]>0){
                     System.out.println(-1);
                     continue;
                 }
