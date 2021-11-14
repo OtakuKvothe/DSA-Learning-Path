@@ -6,7 +6,8 @@ import java.util.Arrays;
 public class Painter {
     public static void main(String[] args) {
         try {
-            BufferedReader br=new BufferedReader(new FileReader(new File("C:/Users/Desktop/Downloads/test_data/test_set_1/ts1_input.txt")));
+            //BufferedReader br=new BufferedReader(new FileReader(new File("C:/Users/Desktop/Downloads/test_data/test_set_1/ts1_input.txt")));
+            BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
             int t=Integer.parseInt(br.readLine());
             for(int tt=1; tt<=t; tt++){
                 int n=Integer.parseInt(br.readLine());
