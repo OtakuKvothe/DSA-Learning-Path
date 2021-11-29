@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
+        "Free Projects",
         "Codechef",
-        "Free Projects"
+        "KickStart"
     ]
 }

@@ -19,6 +19,7 @@ public class FLIPCOMP {
         }
     }
 
+    /*
     public static int countMoves(String s, char c){
         int count = 0;
         int tCount = 0, nCount=0;
@@ -39,5 +40,28 @@ public class FLIPCOMP {
         }
         if(nCount==s.length()) return 0;
         return count;
+    }
+    */
+
+    public static int countMoves(String s, char c){
+        int minCount = 0;
+        int tCount = 0, nCount=0;
+        for(int i=0; i<s.length(); i++){
+            if(s.charAt(i)==c){
+                tCount++;
+            }
+            else{
+                String ss="", st="";
+                char cs=(c=='1')?'0':'1';
+                for(int k=0; k< tCount; k++){
+                    ss+=cs;
+                }
+                nCount=(tCount>=2)?((tCount==1)?1:0):2;
+                st=s.substring(0, i-tCount)+ss+s.substring(i, s.length());
+                nCount = Math.min(nCount+countMoves(st, '1'), nCount+countMoves(st, '0'));
+            }
+            minCount = Math.min(minCount, nCount);
+        }
+        return minCount;
     }
 }
