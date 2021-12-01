@@ -6,62 +6,13 @@ public class FLIPCOMP {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             int t=Integer.parseInt(br.readLine());
             while(t-->0){
-                String s=br.readLine();
-                if(s.length()==0||s.length()==1){
-                    System.out.println(0);
-                }else{
-                    System.out.println(Math.min(countMoves(s, '0'), countMoves(s, '1')));
-                }
+                char[] s = br.readLine().toCharArray();
+                int pc[] = new int[2];
+                
             }
         } catch (Exception e) {
             //TODO: handle exception
             e.printStackTrace();
         }
-    }
-
-    /*
-    public static int countMoves(String s, char c){
-        int count = 0;
-        int tCount = 0, nCount=0;
-        for(int i=0; i<s.length(); i++){
-            if(s.charAt(i)==c){
-                tCount++;
-                nCount++;
-            }
-            if(s.charAt(i) != c || i == s.length()-1){
-                if(tCount==1){
-                    count+=1;
-                }
-                else if(tCount >= 2){
-                    count+=2;
-                }
-                tCount=0;
-            }
-        }
-        if(nCount==s.length()) return 0;
-        return count;
-    }
-    */
-
-    public static int countMoves(String s, char c){
-        int minCount = 0;
-        int tCount = 0, nCount=0;
-        for(int i=0; i<s.length(); i++){
-            if(s.charAt(i)==c){
-                tCount++;
-            }
-            else{
-                String ss="", st="";
-                char cs=(c=='1')?'0':'1';
-                for(int k=0; k< tCount; k++){
-                    ss+=cs;
-                }
-                nCount=(tCount>=2)?((tCount==1)?1:0):2;
-                st=s.substring(0, i-tCount)+ss+s.substring(i, s.length());
-                nCount = Math.min(nCount+countMoves(st, '1'), nCount+countMoves(st, '0'));
-            }
-            minCount = Math.min(minCount, nCount);
-        }
-        return minCount;
     }
 }
