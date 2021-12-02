@@ -1,4 +1,5 @@
 import java.util.LinkedList;
+import java.util.List;
 
 public class WordSearch2 {
 
@@ -14,12 +15,12 @@ public class WordSearch2 {
             }
         }
     }
-/*
+
     public List<String> findWords(char[][] board, String[] words) {
         List<String> res = new LinkedList<>();
         return res;
     }
-*/
+
     public TrieNode makeTrie(char[][] board){
         TrieNode root = new TrieNode();
 
