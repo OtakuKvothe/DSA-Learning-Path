@@ -94,7 +94,7 @@ public class PYRAMIDMOVES {
         return rr;
     }
 
-    //Euler's method
+    // Euler's method
     static long power(long a, long b, long mod) {
         a %= mod;
         if (a == 0)
