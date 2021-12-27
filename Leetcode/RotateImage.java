@@ -37,12 +37,14 @@ public class RotateImage {
         }
     }
 
+    //transpose matrix
     public static void swapT(int[][] matrix, int i, int j){
         int t = matrix[i][j];
         matrix[i][j] = matrix[j][i];
         matrix[j][i] = t;
     }
 
+    //flip on vertical axis
     public static void swapH(int[][] matrix, int i, int j){
         int t = matrix[i][j];
         matrix[i][j] = matrix[i][matrix[i].length - j - 1];
