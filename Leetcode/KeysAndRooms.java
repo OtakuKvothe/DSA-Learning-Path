@@ -6,7 +6,6 @@ import java.util.Queue;
 
 public class KeysAndRooms {
     public boolean canVisitAllRooms(List<List<Integer>> rooms) {
-        int n = rooms.size();
         HashSet<Integer> c = new HashSet<>();
         Queue<Integer> q = new LinkedList<>();
         q.add(0);
