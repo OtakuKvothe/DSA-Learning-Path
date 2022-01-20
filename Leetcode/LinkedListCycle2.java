@@ -1,4 +1,4 @@
-//https://leetcode.com/problems/linked-list-cycle-iihttps://leetcode.com/problems/linked-list-cycle-ii
+//https://leetcode.com/problems/linked-list-cycle-ii
 public class LinkedListCycle2 {
     public ListNode detectCycle(ListNode head) {
         if(head==null||head.next==null) return null;
