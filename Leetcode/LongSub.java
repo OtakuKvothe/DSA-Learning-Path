@@ -10,6 +10,7 @@ public class LongSub {
             String s = sc.next();
             System.out.println(lengthOfLongestSubstring(s));
         }
+        sc.close();
     }
 
     public static int lengthOfLongestSubstring(String s) {

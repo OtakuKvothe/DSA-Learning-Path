@@ -8,6 +8,7 @@ public class IntegerToWords {
             int n = sc.nextInt();
             System.out.println(numberToWords(n));
         }
+        sc.close();
     }
 
     public static String numberToWords(int num) {
