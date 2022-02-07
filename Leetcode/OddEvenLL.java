@@ -55,5 +55,6 @@ public class OddEvenLL {
             }
             System.out.println();
         }
+        sc.close();
     }
 }

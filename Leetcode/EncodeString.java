@@ -9,6 +9,7 @@ public class EncodeString {
             String str = sc.next();
             System.out.println(decodeString(str));
         }
+        sc.close();
     }
 
     public static String decodeString(String s) {

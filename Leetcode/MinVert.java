@@ -1,6 +1,5 @@
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Queue;
 
 public class MinVert {
     public List<Integer> findSmallestSetOfVertices(int n, List<List<Integer>> edges) {

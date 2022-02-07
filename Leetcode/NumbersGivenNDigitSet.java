@@ -16,6 +16,7 @@ public class NumbersGivenNDigitSet {
             int nu = sc.nextInt();
             System.out.println(atMostNGivenDigitSet(num, nu));
         }
+        sc.close();
     }
 
     public static int atMostNGivenDigitSet(String[] digits, int n) {

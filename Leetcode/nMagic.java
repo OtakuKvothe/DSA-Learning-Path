@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class nMagic {
     public static int nthMagicalNumber(int n, int a, int b) {
-        long aa = a, bb = b, r = 0, l=2, mod = (long)Math.pow(10, 9)+7;
+        long aa = a, bb = b, r = 0, mod = (long)Math.pow(10, 9)+7;
         
         while(bb>0){
             long t=aa;
