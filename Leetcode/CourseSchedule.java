@@ -1,6 +1,8 @@
 //https://leetcode.com/problems/course-schedule
 import java.util.ArrayList;
 
+//This problem is plain and simple topological sort
+
 public class CourseSchedule {
     public boolean canFinish(int n, int[][] pre) {
         //adjacency list
