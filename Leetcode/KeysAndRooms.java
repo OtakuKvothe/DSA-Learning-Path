@@ -1,3 +1,4 @@
+
 //https://leetcode.com/problems/keys-and-rooms/
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -9,12 +10,12 @@ public class KeysAndRooms {
         HashSet<Integer> c = new HashSet<>();
         Queue<Integer> q = new LinkedList<>();
         q.add(0);
-        while(!q.isEmpty()){
+        while (!q.isEmpty()) {
             int r = q.poll();
-            if(!c.contains(r)){
+            if (!c.contains(r)) {
                 c.add(r);
                 List<Integer> l = rooms.get(r);
-                for(Integer t: l){
+                for (Integer t : l) {
                     q.add(t);
                 }
             }
