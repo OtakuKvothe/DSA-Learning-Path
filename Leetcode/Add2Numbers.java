@@ -2,7 +2,7 @@
 public class Add2Numbers {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int carry=0;
-        ListNode l=null, prev=null;
+        ListNode l=new ListNode(0), prev=l;
         while(l1!=null||l2!=null){
             int s=carry;
             if(l1!=null) {
@@ -14,19 +14,12 @@ public class Add2Numbers {
                 l2=l2.next;
             }            
             carry=s/10;
-            System.out.println(s);
-            if(prev==null) {
-                prev=new ListNode(s%10);
-                l=prev;
-            }
-            else{
-                prev.next=new ListNode(s%10);
-                prev=prev.next;
-            }  
+            prev.next=new ListNode(s%10);
+            prev=prev.next;  
         }
         if(carry > 0){
             prev.next=new ListNode(1);
         }
-        return l;
+        return l.next;
     }
 }

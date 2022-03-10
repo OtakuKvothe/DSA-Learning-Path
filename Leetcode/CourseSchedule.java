@@ -1,7 +1,7 @@
 //https://leetcode.com/problems/course-schedule
 import java.util.ArrayList;
 
-//This problem is plain and simple topological sort
+//This problem is plain and simple topological sort using Kahn's algorithm
 
 public class CourseSchedule {
     public boolean canFinish(int n, int[][] pre) {
