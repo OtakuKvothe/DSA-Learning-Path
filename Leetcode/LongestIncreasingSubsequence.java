@@ -1,22 +1,30 @@
 //https://leetcode.com/problems/longest-increasing-subsequence/
 
-//IMP: Try out the O(nlogn) approach
+//IMP: Try out the O(nlogn) approach - DP + Binary Search
 import java.util.Arrays;
 
 public class LongestIncreasingSubsequence {
     public int lengthOfLIS(int[] nums) {
         if(nums.length<=1) return nums.length;
         int dp[] = new int[nums.length];
-        Arrays.fill(dp, 1);
-        int max = 1;
-        for(int i=1; i<nums.length; i++){
-            for(int j=0; j<i; j++){
-                if(nums[i]>nums[j]){
-                    dp[i]=Math.max(dp[j]+1, dp[i]);
-                }
-            }
-            max = Math.max(max, dp[i]);
+        Arrays.fill(dp, Integer.MAX_VALUE);
+        int len=0;
+        for(int i=0; i<nums.length; i++) {
+            int x = binarySearch(dp, len, nums[i]);
+            dp[x]=nums[i];
+            if(x == len) len++;
         }
-        return max;
+        return len;
+    }
+    
+    public int binarySearch(int[] arr, int high, int num){
+        int low = 0;
+        while(low <= high){
+            int mid = low + (high - low)/2;
+            if(arr[mid]==num) return mid;
+            else if(arr[mid] < num) low = mid + 1;
+            else high = mid - 1;
+        }
+        return low;
     }
 }
