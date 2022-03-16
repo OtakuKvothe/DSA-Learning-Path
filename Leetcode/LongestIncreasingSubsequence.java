@@ -6,6 +6,7 @@ import java.util.Arrays;
 public class LongestIncreasingSubsequence {
     public int lengthOfLIS(int[] nums) {
         if(nums.length<=1) return nums.length;
+        //dp[i] represent the smallest possible last element in a strictly increasing subsequence with length i+1
         int dp[] = new int[nums.length];
         Arrays.fill(dp, Integer.MAX_VALUE);
         int len=0;
