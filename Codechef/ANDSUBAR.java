@@ -25,6 +25,7 @@ public class ANDSUBAR {
                     System.out.println((int) (n - Math.pow(2, f)));
                 }
             }
+            sc.close();
         } catch (Exception e) {
             // TODO: handle exception
             e.printStackTrace();

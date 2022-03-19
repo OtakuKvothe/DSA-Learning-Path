@@ -1,7 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
 public class CHECKMATE {
@@ -52,7 +51,6 @@ public class CHECKMATE {
         // your code goes here
         try {
             FastReader fr = new FastReader();
-            PrintWriter out = new PrintWriter(System.out);
             int t = fr.nextInt();
             while (t-- > 0) {
                 int xk = fr.nextInt();

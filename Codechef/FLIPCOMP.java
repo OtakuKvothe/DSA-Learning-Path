@@ -6,8 +6,8 @@ public class FLIPCOMP {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             int t=Integer.parseInt(br.readLine());
             while(t-->0){
-                char[] s = br.readLine().toCharArray();
-                int pc[] = new int[2];
+                //char[] s = br.readLine().toCharArray();
+                //int pc[] = new int[2];
                 
             }
         } catch (Exception e) {

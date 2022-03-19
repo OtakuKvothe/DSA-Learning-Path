@@ -20,6 +20,7 @@ public class DIGITREM {
                 }
                 System.out.println(s);
             }
+            sc.close();
         } catch (Exception e) {
 
         }
