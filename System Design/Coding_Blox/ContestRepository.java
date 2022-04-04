@@ -27,6 +27,9 @@ public class ContestRepository {
 
     public void createContest(String contestName, Difficulty difficulty, String creatorUserName) {
         Integer newContestId = getNewContestId();
-        Contest contest = new Contest(contestName, difficulty, creatorUserName);
+        Contest contest = new Contest(newContestId , contestName, difficulty, creatorUserName);
+        contestsByDifficulty.get(difficulty).add(contest);
+        contestsById.put(newContestId, contest);
     }
+
 }
