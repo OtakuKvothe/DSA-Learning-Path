@@ -1,4 +1,4 @@
-package Coding_Blox;
+package Coding_Blox.History;
 
 import java.util.ArrayList;
 

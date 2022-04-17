@@ -1,4 +1,4 @@
-package Coding_Blox;
+package Coding_Blox.Users;
 
 public class User {    
     private String userName;
@@ -23,7 +23,7 @@ public class User {
         return score;
     }
 
-    public void setScore(Integer score) {
-        this.score = score;
+    public void updateScore(Integer score) {
+        this.score += score;
     }
 }

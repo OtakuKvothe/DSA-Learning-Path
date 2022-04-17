@@ -1,4 +1,6 @@
-package Coding_Blox;
+package Coding_Blox.Questions;
+
+import Coding_Blox.Difficulty.Difficulty;
 
 public class Question {
     private Difficulty difficulty;

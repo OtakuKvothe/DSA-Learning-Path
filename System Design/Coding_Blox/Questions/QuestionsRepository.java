@@ -1,21 +1,24 @@
-package Coding_Blox;
+package Coding_Blox.Questions;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.TreeMap;
+
+import Coding_Blox.Difficulty.Difficulty;
 
 public class QuestionsRepository {
     private HashMap<Difficulty, ArrayList<Question>> questionsByDifficulty;
-    private TreeMap<Integer, Question> questionsById;
+    private HashMap<Integer, Question> questionsById;
     private static Integer questionCount = 0;
 
-    public QuestionsRepository() {
+    public static QuestionsRepository questions = new QuestionsRepository();
+
+    private QuestionsRepository() {
         questionsByDifficulty = new HashMap<>();
         questionsByDifficulty.put(Difficulty.HIGH, new ArrayList<>());
         questionsByDifficulty.put(Difficulty.MEDIUM, new ArrayList<>());
         questionsByDifficulty.put(Difficulty.LOW, new ArrayList<>());
-        questionsById = new TreeMap<>();
+        questionsById = new HashMap<>();
     }
 
     public Integer getQuestionCount() {
@@ -34,15 +37,21 @@ public class QuestionsRepository {
     }
 
     public void listQuestions(Difficulty difficulty) {
-        if(difficulty != null) {
-            for(Question q: questionsByDifficulty.get(difficulty)) {
-                System.out.println("Id: "+q.getId()+"\tDifficulty: "+q.getDifficulty()+"\tScore: "+q.getScore());
+        if (difficulty != null) {
+            for (Question q : questionsByDifficulty.get(difficulty)) {
+                System.out.println(
+                        "Id: " + q.getId() + "\tDifficulty: " + q.getDifficulty() + "\tScore: " + q.getScore());
             }
         } else {
-            for(Map.Entry<Integer, Question> entry: questionsById.entrySet()) {
+            for (Map.Entry<Integer, Question> entry : questionsById.entrySet()) {
                 Question q = entry.getValue();
-                System.out.println("Id: "+q.getId()+"\tDifficulty: "+q.getDifficulty()+"\tScore: "+q.getScore());
+                System.out.println(
+                        "Id: " + q.getId() + "\tDifficulty: " + q.getDifficulty() + "\tScore: " + q.getScore());
             }
         }
+    }
+
+    public ArrayList<Question> getQuestions(Difficulty difficulty) {
+        return questionsByDifficulty.get(difficulty);
     }
 }

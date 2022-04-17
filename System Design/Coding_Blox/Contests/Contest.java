@@ -1,4 +1,6 @@
-package Coding_Blox;
+package Coding_Blox.Contests;
+
+import Coding_Blox.Difficulty.Difficulty;
 
 public class Contest {
     private Integer id;
