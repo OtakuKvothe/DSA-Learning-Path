@@ -1,3 +1,5 @@
+import java.util.HashSet;
+
 //https://leetcode.com/problems/min-cost-to-connect-all-points
 
 public class MinimumCostToConnectAllPoints {

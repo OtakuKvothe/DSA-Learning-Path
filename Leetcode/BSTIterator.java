@@ -1,5 +1,7 @@
 //https://leetcode.com/problems/binary-search-tree-iterator/
 
+import java.util.Stack;
+
 class BSTIterator {
     
     Stack<TreeNode> stack;

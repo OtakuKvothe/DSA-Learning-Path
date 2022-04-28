@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 //https://leetcode.com/problems/encode-and-decode-tinyurl/
 
 public class EncodeAndDecodeTinyURL {

@@ -1,4 +1,4 @@
-//https://leetcode.com/problems/coin-change/
+//https://leetcode.com/problems/coin -change/
 public class CoinChange {
     public int coinChange(int[] coins, int amount) {
         if (amount <= 0)
