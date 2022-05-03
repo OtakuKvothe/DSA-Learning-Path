@@ -1,4 +1,5 @@
-import java.util.Arrays;
+//https://leetcode.com/problems/is-graph-bipartite
+
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -31,8 +32,7 @@ public class IsGraphBipartite {
                             return false;
                         }
                     }
-                }
-                
+                }               
             }
         }
         return true;
