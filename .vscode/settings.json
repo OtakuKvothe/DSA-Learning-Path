@@ -1,10 +1,11 @@
 {
     "java.project.sourcePaths": [
+        "System Design",
         "Leetcode",
         "Free Projects",
         "Codechef",
-        "CSES",
         "CodeStudio",
-        "System Design"
+        "CSES",
+        "Interview/B&B"
     ]
 }
