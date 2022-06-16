@@ -2,10 +2,11 @@
     "java.project.sourcePaths": [
         "System Design",
         "Leetcode",
+        "Interview/B&B",
         "Free Projects",
         "Codechef",
         "CodeStudio",
         "CSES",
-        "Interview/B&B"
+        "Interview/Brigosha"
     ]
 }
