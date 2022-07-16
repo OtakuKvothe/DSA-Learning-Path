@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 // https://leetcode.com/problems/prefix-and-suffix-search/
 
 public class PrefixAndSuffixSearch {
@@ -14,7 +16,7 @@ public class PrefixAndSuffixSearch {
     
     private Trie prefix;
 
-    public WordFilter(String[] words) {
+    public PrefixAndSuffixSearch(String[] words) {
         prefix = new Trie();
         for(int i=0; i<words.length; i++) {
             insert(prefix, words[i], i);

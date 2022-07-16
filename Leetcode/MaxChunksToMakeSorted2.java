@@ -1,5 +1,7 @@
 //https://leetcode.com/problems/max-chunks-to-make-sorted-ii
 
+import java.util.Stack;
+
 public class MaxChunksToMakeSorted2 {
     public int maxChunksToSorted(int[] arr) {
         Stack<Integer> st = new Stack<>();

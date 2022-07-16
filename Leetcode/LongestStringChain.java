@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.HashMap;
+
 //https://leetcode.com/problems/longest-string-chain/
 
 public class LongestStringChain {

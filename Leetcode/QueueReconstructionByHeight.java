@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 // https://leetcode.com/problems/queue-reconstruction-by-height
 public class QueueReconstructionByHeight {
     public int[][] reconstructQueue(int[][] people) {

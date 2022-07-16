@@ -1,5 +1,8 @@
 // https://leetcode.com/problems/next-greater-element-i
 
+import java.util.HashMap;
+import java.util.Stack;
+
 public class NextGreaterElement {
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {
         HashMap<Integer, Integer> map = new HashMap<>();

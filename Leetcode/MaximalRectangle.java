@@ -1,5 +1,7 @@
 //https://leetcode.com/problems/maximal-rectangle
 
+import java.util.Stack;
+
 public class MaximalRectangle {
     public int maximalRectangle(char[][] mat) {
         int m = mat.length, n = mat[0].length, res = 0;

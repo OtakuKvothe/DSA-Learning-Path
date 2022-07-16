@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.PriorityQueue;
+
 //https://leetcode.com/problems/course-schedule-iii
 
 public class CourseSchedule3 {

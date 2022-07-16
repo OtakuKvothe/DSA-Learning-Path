@@ -1,3 +1,6 @@
+import java.util.HashSet;
+import java.util.Set;
+
 //https://leetcode.com/problems/longest-substring-without-repeating-characters/
 
 public class LongestSubstringWithoutRepeatingCharacters {

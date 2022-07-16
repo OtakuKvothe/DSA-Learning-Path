@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 //https://leetcode.com/problems/n-queens-ii
 public class NQueens2 {
     public int totalNQueens(int n) {

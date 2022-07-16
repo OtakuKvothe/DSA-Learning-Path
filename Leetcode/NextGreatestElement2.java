@@ -1,5 +1,8 @@
 //https://leetcode.com/problems/next-greater-element-ii
 
+import java.util.Stack;
+import java.util.Arrays;
+
 public class NextGreatestElement2 {
     public int[] nextGreaterElements(int[] nums) {
         Stack<Integer> st = new Stack<>();

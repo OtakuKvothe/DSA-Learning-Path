@@ -4,13 +4,16 @@ public class MaxWtNode {
     
     public static int maxWtNode(int n, int[] arr) {
         int[] wts = new int[n];
-        int max = 0;
+        int max = Integer.MIN_VALUE, ind = -1;
         for(int i=0; i<n; i++) {
+            if(arr[i] == -1)
+                continue;
             wts[arr[i]] += i;
             max = Math.max(wts[arr[i]], max);
+            ind = i;
         }
 
-        return max;
+        return ind;
     }
 
     public static void main(String[] args) {

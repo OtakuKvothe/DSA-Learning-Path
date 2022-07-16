@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 //https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/
 
 public class MinumumDeletions {

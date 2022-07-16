@@ -1,7 +1,7 @@
 public class ClosestCommonNode {
     
     public static int closestCommonNode(int[] nodes, int n, int node1, int node2) {
-        
+        return 0;
     }
 
     public static void main(String[] args) {
