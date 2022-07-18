@@ -27,5 +27,6 @@ public class MaxWtNode {
             }
             System.out.println(maxWtNode(n, arr));
         }
+        sc.close();
     }
 }
