@@ -26,7 +26,7 @@ public class LargestCycle {
     }
     
     public static void dfs(int[] arr, int i) {
-        if(i == -1) 
+        if(i == -1 || i >= arr.length) 
             return;
         
         if(vis.contains(i))
@@ -39,7 +39,7 @@ public class LargestCycle {
         }
         
         dist[i] = length;
-        length++;
+        length += i;
         
         dfs(arr, arr[i]);
         

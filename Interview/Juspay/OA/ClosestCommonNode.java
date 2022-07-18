@@ -12,7 +12,7 @@ public class ClosestCommonNode {
 
         int mark1 = node1, mark2 = node2;
         int dist = -1;
-        while(mark1 != -1 && !vis[mark1]) {
+        while(mark1 != -1 && mark1 < N && !vis[mark1]) {
             vis[mark1] = true;
             dist++;
             map1.put(mark1, dist);
@@ -21,7 +21,7 @@ public class ClosestCommonNode {
         int res = Integer.MAX_VALUE, node = -1;
         vis = new boolean[N];
         dist = -1;
-        while(mark2 != -1 && !vis[mark2]) {
+        while(mark2 != -1 && mark2 < N && !vis[mark2]) {
             vis[mark2] = true;
             dist++;
             map2.put(mark2, dist);
@@ -33,9 +33,6 @@ public class ClosestCommonNode {
                 }
             }
         }
-
-        System.out.println(map1);
-        System.out.println(map2);
 
         if(node != -1 && res <= map1.getOrDefault(node2, Integer.MAX_VALUE) && res <= map2.getOrDefault(node1, Integer.MAX_VALUE)) {
             return node;

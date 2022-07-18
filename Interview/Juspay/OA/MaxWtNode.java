@@ -9,8 +9,13 @@ public class MaxWtNode {
             if(arr[i] == -1)
                 continue;
             wts[arr[i]] += i;
-            max = Math.max(wts[arr[i]], max);
-            ind = i;
+        }
+
+        for(int i=0; i<n; i++) {
+            if(max < wts[i]) {
+                max = wts[i];
+                ind = i;
+            }
         }
 
         return ind;
