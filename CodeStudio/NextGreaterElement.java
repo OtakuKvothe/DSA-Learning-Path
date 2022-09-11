@@ -1,7 +1,7 @@
 //https://www.codingninjas.com/codestudio/problems/next-greater-element_670312?leftPanelTab=1
 import java.util.Stack;
 public class NextGreaterElement {
-    public static int[] nextGreaterElement(int[] arr, int n) 
+    public int[] nextGreaterElement(int[] arr, int n) 
     {
         // Write your code here.
         int p=n-1, res[] = new int[n];
