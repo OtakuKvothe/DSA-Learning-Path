@@ -9,7 +9,7 @@ public class NumberOfMatchingSubsequences {
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
             if (map.containsKey(ch)) {
-                var list = map.get(ch);
+                ArrayList<Integer> list = map.get(ch);
                 list.add(i);
                 map.put(ch, list);
             } else {

@@ -4,7 +4,7 @@ public class SwappingNodesInALinkedList {
         ListNode n1 = null, n2 = null;
         int t = k;
         
-        for(var p = head; p != null; p = p.next) {
+        for(ListNode p = head; p != null; p = p.next) {
             n2 = n2 == null ? null : n2.next;
             if(--t == 0) {
                 n1 = p;
