@@ -1,8 +1,8 @@
 package ParkingLot;
 
 public class Vehicle {
-    String regNo;
-    String color;
+    public String regNo;
+    public String color;
     public Vehicle(String regNo, String color) {
         this.regNo = regNo;
         this.color = color;
