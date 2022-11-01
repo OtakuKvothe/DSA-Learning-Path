@@ -1,5 +1,5 @@
 package MessagingQueue.consumer;
 
-public class Consumer {
+public abstract class Consumer {
     
 }

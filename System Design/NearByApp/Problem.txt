@@ -1,0 +1,24 @@
+Near by App:
+        An app that takes user location and category preference (optionally) and gives out a list of Activities
+        he/she can perform around that location.
+
+
+
+        Expected features:
+        Local caching - activies fected during last session (irrespective of location and preference changes) are showed before network call for the currrent session is successful
+
+        UI is updated once we get actual network response and the new response is cached
+
+        We fetch only 10 activities at once from API and paginate when we user scrolls more
+
+        User is able to sort activities by distance, time required to complete activity, rating etc
+
+        Also, there is a fancy feature, show random activity. On click of which a random activity is shown to the user and the activity once shown is not repeated and if we exhaust all the activites, a message is shown saying all activies are exhausted (additionally can implement pagination logic here as well, to try fetching next page after all the activities currently fetched are exhausted)
+
+
+
+        Note:
+        Mostly intereted in the contracts between the differeny layers and not the functional/business logic of different blocks.
+        UI is implemneted by a separate team member. You need to focus on exposing the clean API for UI to consume.
+        Solution is expected to be of Production Quality (Modular, extendable and testable) and in a large team setup
+        Additional points if the solution given is extendable for possible future usecases
